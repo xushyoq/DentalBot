@@ -19,7 +19,7 @@ namespace DentalBot.Bot
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
-            Console.WriteLine("Бот запущен");
+            Console.WriteLine("Bot ishga tushdi");
 
             _botClient.StartReceiving(
                 updateHandler: (bot, update, ct) => _handler.HandleUpdateAsync(update, ct),
@@ -32,7 +32,7 @@ namespace DentalBot.Bot
             }
             catch (OperationCanceledException)
             {
-                Console.WriteLine("Работа бота остановлена");
+                Console.WriteLine("Bot to'xtatildi");
             }
             
         }
