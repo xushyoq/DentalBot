@@ -1,0 +1,12 @@
+<Solution>
+  <Project Path="DentalBot.Application/DentalBot.Application.csproj">
+    <BuildDependency Project="DentalBot/DentalBot.Domain.csproj" />
+  </Project>
+  <Project Path="DentalBot.Bot/DentalBot.Bot.csproj">
+    <BuildDependency Project="DentalBot.Application/DentalBot.Application.csproj" />
+  </Project>
+  <Project Path="DentalBot.Infrastructure/DentalBot.Infrastructure.csproj">
+    <BuildDependency Project="DentalBot.Application/DentalBot.Application.csproj" />
+  </Project>
+  <Project Path="DentalBot/DentalBot.Domain.csproj" />
+</Solution>

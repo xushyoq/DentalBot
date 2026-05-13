@@ -1,0 +1,381 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A63EEBB8-8CA6-B510-3EC2-AD10536D5230}|DentalBot.Bot\\DentalBot.Bot.csproj|c:\\users\\asus\\desktop\\21school\\dentalbot\\dentalbot.bot\\handlers\\updatehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A63EEBB8-8CA6-B510-3EC2-AD10536D5230}|DentalBot.Bot\\DentalBot.Bot.csproj|solutionrelative:dentalbot.bot\\handlers\\updatehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A63EEBB8-8CA6-B510-3EC2-AD10536D5230}|DentalBot.Bot\\DentalBot.Bot.csproj|c:\\users\\asus\\desktop\\21school\\dentalbot\\dentalbot.bot\\botbackgroundservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A63EEBB8-8CA6-B510-3EC2-AD10536D5230}|DentalBot.Bot\\DentalBot.Bot.csproj|solutionrelative:dentalbot.bot\\botbackgroundservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB8D4A6C-2423-1ED2-83C8-7AEAA7035681}|DentalBot.Application\\DentalBot.Application.csproj|c:\\users\\asus\\desktop\\21school\\dentalbot\\dentalbot.application\\services\\patientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB8D4A6C-2423-1ED2-83C8-7AEAA7035681}|DentalBot.Application\\DentalBot.Application.csproj|solutionrelative:dentalbot.application\\services\\patientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB8D4A6C-2423-1ED2-83C8-7AEAA7035681}|DentalBot.Application\\DentalBot.Application.csproj|c:\\users\\asus\\desktop\\21school\\dentalbot\\dentalbot.application\\interfaces\\ipatientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB8D4A6C-2423-1ED2-83C8-7AEAA7035681}|DentalBot.Application\\DentalBot.Application.csproj|solutionrelative:dentalbot.application\\interfaces\\ipatientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1330A69-D623-EE53-0759-295D65F6A994}|DentalBot.Infrastructure\\DentalBot.Infrastructure.csproj|c:\\users\\asus\\desktop\\21school\\dentalbot\\dentalbot.infrastructure\\repositories\\patientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1330A69-D623-EE53-0759-295D65F6A994}|DentalBot.Infrastructure\\DentalBot.Infrastructure.csproj|solutionrelative:dentalbot.infrastructure\\repositories\\patientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB8D4A6C-2423-1ED2-83C8-7AEAA7035681}|DentalBot.Application\\DentalBot.Application.csproj|c:\\users\\asus\\desktop\\21school\\dentalbot\\dentalbot.application\\interfaces\\ipatientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB8D4A6C-2423-1ED2-83C8-7AEAA7035681}|DentalBot.Application\\DentalBot.Application.csproj|solutionrelative:dentalbot.application\\interfaces\\ipatientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A63EEBB8-8CA6-B510-3EC2-AD10536D5230}|DentalBot.Bot\\DentalBot.Bot.csproj|c:\\users\\asus\\desktop\\21school\\dentalbot\\dentalbot.bot\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A63EEBB8-8CA6-B510-3EC2-AD10536D5230}|DentalBot.Bot\\DentalBot.Bot.csproj|solutionrelative:dentalbot.bot\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A63EEBB8-8CA6-B510-3EC2-AD10536D5230}|DentalBot.Bot\\DentalBot.Bot.csproj|c:\\users\\asus\\desktop\\21school\\dentalbot\\dentalbot.bot\\userstateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A63EEBB8-8CA6-B510-3EC2-AD10536D5230}|DentalBot.Bot\\DentalBot.Bot.csproj|solutionrelative:dentalbot.bot\\userstateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A63EEBB8-8CA6-B510-3EC2-AD10536D5230}|DentalBot.Bot\\DentalBot.Bot.csproj|c:\\users\\asus\\desktop\\21school\\dentalbot\\dentalbot.bot\\userstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A63EEBB8-8CA6-B510-3EC2-AD10536D5230}|DentalBot.Bot\\DentalBot.Bot.csproj|solutionrelative:dentalbot.bot\\userstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\AppData\\Roaming\\Microsoft\\UserSecrets\\f0b75fa3-ac05-4ec1-9433-327d0f24209c\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A63EEBB8-8CA6-B510-3EC2-AD10536D5230}|DentalBot.Bot\\DentalBot.Bot.csproj|c:\\users\\asus\\desktop\\21school\\dentalbot\\dentalbot.bot\\dentalbot.bot.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A63EEBB8-8CA6-B510-3EC2-AD10536D5230}|DentalBot.Bot\\DentalBot.Bot.csproj|solutionrelative:dentalbot.bot\\dentalbot.bot.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB8D4A6C-2423-1ED2-83C8-7AEAA7035681}|DentalBot.Application\\DentalBot.Application.csproj|c:\\users\\asus\\desktop\\21school\\dentalbot\\dentalbot.application\\interfaces\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB8D4A6C-2423-1ED2-83C8-7AEAA7035681}|DentalBot.Application\\DentalBot.Application.csproj|solutionrelative:dentalbot.application\\interfaces\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB8D4A6C-2423-1ED2-83C8-7AEAA7035681}|DentalBot.Application\\DentalBot.Application.csproj|c:\\users\\asus\\desktop\\21school\\dentalbot\\dentalbot.application\\interfaces\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB8D4A6C-2423-1ED2-83C8-7AEAA7035681}|DentalBot.Application\\DentalBot.Application.csproj|solutionrelative:dentalbot.application\\interfaces\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB8D4A6C-2423-1ED2-83C8-7AEAA7035681}|DentalBot.Application\\DentalBot.Application.csproj|c:\\users\\asus\\desktop\\21school\\dentalbot\\dentalbot.application\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB8D4A6C-2423-1ED2-83C8-7AEAA7035681}|DentalBot.Application\\DentalBot.Application.csproj|solutionrelative:dentalbot.application\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1330A69-D623-EE53-0759-295D65F6A994}|DentalBot.Infrastructure\\DentalBot.Infrastructure.csproj|c:\\users\\asus\\desktop\\21school\\dentalbot\\dentalbot.infrastructure\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1330A69-D623-EE53-0759-295D65F6A994}|DentalBot.Infrastructure\\DentalBot.Infrastructure.csproj|solutionrelative:dentalbot.infrastructure\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1330A69-D623-EE53-0759-295D65F6A994}|DentalBot.Infrastructure\\DentalBot.Infrastructure.csproj|c:\\users\\asus\\desktop\\21school\\dentalbot\\dentalbot.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1330A69-D623-EE53-0759-295D65F6A994}|DentalBot.Infrastructure\\DentalBot.Infrastructure.csproj|solutionrelative:dentalbot.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B45EF4D-3980-BF02-F648-15C85B287A55}|DentalBot\\DentalBot.Domain.csproj|c:\\users\\asus\\desktop\\21school\\dentalbot\\dentalbot\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B45EF4D-3980-BF02-F648-15C85B287A55}|DentalBot\\DentalBot.Domain.csproj|solutionrelative:dentalbot\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B45EF4D-3980-BF02-F648-15C85B287A55}|DentalBot\\DentalBot.Domain.csproj|c:\\users\\asus\\desktop\\21school\\dentalbot\\dentalbot\\entities\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B45EF4D-3980-BF02-F648-15C85B287A55}|DentalBot\\DentalBot.Domain.csproj|solutionrelative:dentalbot\\entities\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B45EF4D-3980-BF02-F648-15C85B287A55}|DentalBot\\DentalBot.Domain.csproj|c:\\users\\asus\\desktop\\21school\\dentalbot\\dentalbot\\entities\\patientemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B45EF4D-3980-BF02-F648-15C85B287A55}|DentalBot\\DentalBot.Domain.csproj|solutionrelative:dentalbot\\entities\\patientemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1330A69-D623-EE53-0759-295D65F6A994}|DentalBot.Infrastructure\\DentalBot.Infrastructure.csproj|c:\\users\\asus\\desktop\\21school\\dentalbot\\dentalbot.infrastructure\\migrations\\20260429105151_updatetelegramid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1330A69-D623-EE53-0759-295D65F6A994}|DentalBot.Infrastructure\\DentalBot.Infrastructure.csproj|solutionrelative:dentalbot.infrastructure\\migrations\\20260429105151_updatetelegramid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A63EEBB8-8CA6-B510-3EC2-AD10536D5230}|DentalBot.Bot\\DentalBot.Bot.csproj|c:\\users\\asus\\desktop\\21school\\dentalbot\\dentalbot.bot\\appsettings.json||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A63EEBB8-8CA6-B510-3EC2-AD10536D5230}|DentalBot.Bot\\DentalBot.Bot.csproj|solutionrelative:dentalbot.bot\\appsettings.json||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A63EEBB8-8CA6-B510-3EC2-AD10536D5230}|DentalBot.Bot\\DentalBot.Bot.csproj|c:\\users\\asus\\desktop\\21school\\dentalbot\\dentalbot.bot\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A63EEBB8-8CA6-B510-3EC2-AD10536D5230}|DentalBot.Bot\\DentalBot.Bot.csproj|solutionrelative:dentalbot.bot\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UpdateHandler.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot.Bot\\Handlers\\UpdateHandler.cs",
+              "RelativeDocumentMoniker": "DentalBot.Bot\\Handlers\\UpdateHandler.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot.Bot\\Handlers\\UpdateHandler.cs",
+              "RelativeToolTip": "DentalBot.Bot\\Handlers\\UpdateHandler.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAmwH8AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T09:03:27.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserStateService.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot.Bot\\UserStateService.cs",
+              "RelativeDocumentMoniker": "DentalBot.Bot\\UserStateService.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot.Bot\\UserStateService.cs",
+              "RelativeToolTip": "DentalBot.Bot\\UserStateService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T11:51:48.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot.Bot\\Program.cs",
+              "RelativeDocumentMoniker": "DentalBot.Bot\\Program.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot.Bot\\Program.cs",
+              "RelativeToolTip": "DentalBot.Bot\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T07:00:52.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PatientRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot.Infrastructure\\Repositories\\PatientRepository.cs",
+              "RelativeDocumentMoniker": "DentalBot.Infrastructure\\Repositories\\PatientRepository.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot.Infrastructure\\Repositories\\PatientRepository.cs",
+              "RelativeToolTip": "DentalBot.Infrastructure\\Repositories\\PatientRepository.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwEAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T19:56:32.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PatientService.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot.Application\\Services\\PatientService.cs",
+              "RelativeDocumentMoniker": "DentalBot.Application\\Services\\PatientService.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot.Application\\Services\\PatientService.cs",
+              "RelativeToolTip": "DentalBot.Application\\Services\\PatientService.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwC4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T19:49:56.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IPatientRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot.Application\\Interfaces\\IPatientRepository.cs",
+              "RelativeDocumentMoniker": "DentalBot.Application\\Interfaces\\IPatientRepository.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot.Application\\Interfaces\\IPatientRepository.cs",
+              "RelativeToolTip": "DentalBot.Application\\Interfaces\\IPatientRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T19:56:00.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserState.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot.Bot\\UserState.cs",
+              "RelativeDocumentMoniker": "DentalBot.Bot\\UserState.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot.Bot\\UserState.cs",
+              "RelativeToolTip": "DentalBot.Bot\\UserState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T11:51:37.606Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BotBackgroundService.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot.Bot\\BotBackgroundService.cs",
+              "RelativeDocumentMoniker": "DentalBot.Bot\\BotBackgroundService.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot.Bot\\BotBackgroundService.cs",
+              "RelativeToolTip": "DentalBot.Bot\\BotBackgroundService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T09:05:48.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IEmployeeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot.Application\\Interfaces\\IEmployeeRepository.cs",
+              "RelativeDocumentMoniker": "DentalBot.Application\\Interfaces\\IEmployeeRepository.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot.Application\\Interfaces\\IEmployeeRepository.cs",
+              "RelativeToolTip": "DentalBot.Application\\Interfaces\\IEmployeeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T10:26:32.865Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IPatientService.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot.Application\\Interfaces\\IPatientService.cs",
+              "RelativeDocumentMoniker": "DentalBot.Application\\Interfaces\\IPatientService.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot.Application\\Interfaces\\IPatientService.cs",
+              "RelativeToolTip": "DentalBot.Application\\Interfaces\\IPatientService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T19:50:39.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DentalBot.Bot.csproj",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot.Bot\\DentalBot.Bot.csproj",
+              "RelativeDocumentMoniker": "DentalBot.Bot\\DentalBot.Bot.csproj",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot.Bot\\DentalBot.Bot.csproj",
+              "RelativeToolTip": "DentalBot.Bot\\DentalBot.Bot.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-02T11:51:27.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "secrets.json",
+              "DocumentMoniker": "C:\\Users\\ASUS\\AppData\\Roaming\\Microsoft\\UserSecrets\\f0b75fa3-ac05-4ec1-9433-327d0f24209c\\secrets.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\f0b75fa3-ac05-4ec1-9433-327d0f24209c\\secrets.json",
+              "ToolTip": "C:\\Users\\ASUS\\AppData\\Roaming\\Microsoft\\UserSecrets\\f0b75fa3-ac05-4ec1-9433-327d0f24209c\\secrets.json",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\f0b75fa3-ac05-4ec1-9433-327d0f24209c\\secrets.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-02T11:51:40.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IEmployeeService.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot.Application\\Interfaces\\IEmployeeService.cs",
+              "RelativeDocumentMoniker": "DentalBot.Application\\Interfaces\\IEmployeeService.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot.Application\\Interfaces\\IEmployeeService.cs",
+              "RelativeToolTip": "DentalBot.Application\\Interfaces\\IEmployeeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T10:08:01.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EmployeeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot.Infrastructure\\Repositories\\EmployeeRepository.cs",
+              "RelativeDocumentMoniker": "DentalBot.Infrastructure\\Repositories\\EmployeeRepository.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot.Infrastructure\\Repositories\\EmployeeRepository.cs",
+              "RelativeToolTip": "DentalBot.Infrastructure\\Repositories\\EmployeeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T10:11:18.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot.Infrastructure\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "DentalBot.Infrastructure\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot.Infrastructure\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "DentalBot.Infrastructure\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAAB8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T07:05:30.599Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EmployeeService.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot.Application\\Services\\EmployeeService.cs",
+              "RelativeDocumentMoniker": "DentalBot.Application\\Services\\EmployeeService.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot.Application\\Services\\EmployeeService.cs",
+              "RelativeToolTip": "DentalBot.Application\\Services\\EmployeeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T10:09:07.785Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot\\Entities\\Employee.cs",
+              "RelativeDocumentMoniker": "DentalBot\\Entities\\Employee.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot\\Entities\\Employee.cs",
+              "RelativeToolTip": "DentalBot\\Entities\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T07:04:09.857Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot\\Entities\\Patient.cs",
+              "RelativeDocumentMoniker": "DentalBot\\Entities\\Patient.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot\\Entities\\Patient.cs",
+              "RelativeToolTip": "DentalBot\\Entities\\Patient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T07:01:34.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PatientEmployee.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot\\Entities\\PatientEmployee.cs",
+              "RelativeDocumentMoniker": "DentalBot\\Entities\\PatientEmployee.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot\\Entities\\PatientEmployee.cs",
+              "RelativeToolTip": "DentalBot\\Entities\\PatientEmployee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T07:04:48.861Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "20260429105151_UpdateTelegramId.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot.Infrastructure\\Migrations\\20260429105151_UpdateTelegramId.cs",
+              "RelativeDocumentMoniker": "DentalBot.Infrastructure\\Migrations\\20260429105151_UpdateTelegramId.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot.Infrastructure\\Migrations\\20260429105151_UpdateTelegramId.cs",
+              "RelativeToolTip": "DentalBot.Infrastructure\\Migrations\\20260429105151_UpdateTelegramId.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAACDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T10:51:52.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot.Bot\\appsettings.json",
+              "RelativeDocumentMoniker": "DentalBot.Bot\\appsettings.json",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot.Bot\\appsettings.json",
+              "RelativeToolTip": "DentalBot.Bot\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-29T09:11:33.157Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot.Bot\\appsettings.json",
+              "RelativeDocumentMoniker": "DentalBot.Bot\\appsettings.json",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\21school\\DentalBot\\DentalBot.Bot\\appsettings.json",
+              "RelativeToolTip": "DentalBot.Bot\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-29T09:00:33.849Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
