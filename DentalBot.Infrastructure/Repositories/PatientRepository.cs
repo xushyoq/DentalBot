@@ -37,6 +37,17 @@ namespace DentalBot.Infrastructure.Repositories
             return await _context.Patients.ToListAsync();
         }
 
+        public async Task<IEnumerable<Patient>> GetByVisitDateAsync(DateTime date)
+        {
+            var start = DateTime.SpecifyKind(date.Date, DateTimeKind.Utc);
+            var end = start.AddDays(1);
+
+            return await _context.Patients
+                .Where(patient => patient.VisitDate >= start && patient.VisitDate < end)
+                .OrderBy(patient => patient.Id)
+                .ToListAsync();
+        }
+
         public async Task<Patient?> GetByIdAsync(int id)
         {
             return await _context.Patients.FindAsync(id);

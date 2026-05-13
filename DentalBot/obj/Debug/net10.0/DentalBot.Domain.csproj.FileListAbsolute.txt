@@ -9,3 +9,4 @@ C:\Users\ASUS\Desktop\21school\DentalBot\DentalBot\obj\Debug\net10.0\DentalBot.D
 C:\Users\ASUS\Desktop\21school\DentalBot\DentalBot\obj\Debug\net10.0\refint\DentalBot.Domain.dll
 C:\Users\ASUS\Desktop\21school\DentalBot\DentalBot\obj\Debug\net10.0\DentalBot.Domain.pdb
 C:\Users\ASUS\Desktop\21school\DentalBot\DentalBot\obj\Debug\net10.0\ref\DentalBot.Domain.dll
+C:\Users\ASUS\Desktop\21school\DentalBot\DentalBot\obj\Debug\net10.0\DentalBot.Domain.sourcelink.json

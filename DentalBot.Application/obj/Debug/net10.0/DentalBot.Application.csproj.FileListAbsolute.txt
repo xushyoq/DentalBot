@@ -13,3 +13,4 @@ C:\Users\ASUS\Desktop\21school\DentalBot\DentalBot.Application\obj\Debug\net10.0
 C:\Users\ASUS\Desktop\21school\DentalBot\DentalBot.Application\obj\Debug\net10.0\refint\DentalBot.Application.dll
 C:\Users\ASUS\Desktop\21school\DentalBot\DentalBot.Application\obj\Debug\net10.0\DentalBot.Application.pdb
 C:\Users\ASUS\Desktop\21school\DentalBot\DentalBot.Application\obj\Debug\net10.0\ref\DentalBot.Application.dll
+C:\Users\ASUS\Desktop\21school\DentalBot\DentalBot.Application\obj\Debug\net10.0\DentalBot.Application.sourcelink.json

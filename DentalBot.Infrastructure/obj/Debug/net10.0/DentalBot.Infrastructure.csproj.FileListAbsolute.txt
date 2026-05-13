@@ -17,3 +17,4 @@ C:\Users\ASUS\Desktop\21school\DentalBot\DentalBot.Infrastructure\obj\Debug\net1
 C:\Users\ASUS\Desktop\21school\DentalBot\DentalBot.Infrastructure\obj\Debug\net10.0\DentalBot.Infrastructure.pdb
 C:\Users\ASUS\Desktop\21school\DentalBot\DentalBot.Infrastructure\obj\Debug\net10.0\DentalBot.Infrastructure.genruntimeconfig.cache
 C:\Users\ASUS\Desktop\21school\DentalBot\DentalBot.Infrastructure\obj\Debug\net10.0\ref\DentalBot.Infrastructure.dll
+C:\Users\ASUS\Desktop\21school\DentalBot\DentalBot.Infrastructure\obj\Debug\net10.0\DentalBot.Infrastructure.sourcelink.json
