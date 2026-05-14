@@ -14,12 +14,15 @@ namespace DentalBot.Bot
         WaitingPhone,
         WaitingAddress,
         WaitingWorkplace,
-        WaitingDoctor
+        WaitingDoctor,
+        WaitingPatientSearch,
+        WaitingPatientSelection
     }
 
     public class UserState
     {
         public UserStep Step { get; set; } = UserStep.None;
         public Patient? TempPatient { get; set; }
+        public List<Patient> SearchResults { get; set; } = new();
     }
 }

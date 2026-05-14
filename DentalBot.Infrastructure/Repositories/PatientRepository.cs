@@ -53,6 +53,20 @@ namespace DentalBot.Infrastructure.Repositories
             return await _context.Patients.FindAsync(id);
         }
 
+        public async Task<IEnumerable<Patient>> SearchAsync(string query, int maxResults)
+        {
+            var pattern = $"%{query.Trim()}%";
+
+            return await _context.Patients
+                .Where(patient =>
+                    EF.Functions.ILike(patient.FirstName, pattern) ||
+                    EF.Functions.ILike(patient.LastName, pattern) ||
+                    EF.Functions.ILike(patient.Phone, pattern))
+                .OrderByDescending(patient => patient.VisitDate)
+                .Take(maxResults)
+                .ToListAsync();
+        }
+
         public async Task<Patient> UpdateAsync(Patient patient)
         {
             _context.Patients.Update(patient);

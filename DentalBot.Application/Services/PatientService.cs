@@ -41,6 +41,11 @@ namespace DentalBot.Application.Services
             return await _patientRepository.GetByVisitDateAsync(date);
         }
 
+        public async Task<IEnumerable<Patient>> SearchAsync(string query, int maxResults)
+        {
+            return await _patientRepository.SearchAsync(query, maxResults);
+        }
+
         public async Task<Patient?> GetByIdAsync(int id)
         {
             return await _patientRepository.GetByIdAsync(id);

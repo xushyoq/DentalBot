@@ -10,6 +10,7 @@ namespace DentalBot.Application.Interfaces
         Task<Patient?> GetByIdAsync(int id);
         Task<IEnumerable<Patient>> GetAllAsync();
         Task<IEnumerable<Patient>> GetByVisitDateAsync(DateTime date);
+        Task<IEnumerable<Patient>> SearchAsync(string query, int maxResults);
         Task<Patient> AddAsync(Patient patient);
         Task<Patient> UpdateAsync(Patient patient);
         Task<Patient> DeleteAsync(Patient patient);
