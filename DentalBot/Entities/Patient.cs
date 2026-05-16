@@ -9,8 +9,8 @@
         public string Phone { get; set; } = string.Empty;
         public string Address { get; set; } = string.Empty;
         public string Workplace { get; set; } = string.Empty;
-        public DateTime VisitDate { get; set; }
         public ICollection<PatientEmployee> PatientEmployees { get; set; } = new List<PatientEmployee>();
+        public ICollection<PatientVisit> Visits { get; set; } = new List<PatientVisit>();
 
     }
 }

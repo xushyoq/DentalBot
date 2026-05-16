@@ -36,14 +36,24 @@ namespace DentalBot.Application.Services
             return await _patientRepository.GetAllAsync();
         }
 
-        public async Task<IEnumerable<Patient>> GetByVisitDateAsync(DateTime date)
+        public async Task<IEnumerable<PatientVisit>> GetVisitsByDateAsync(DateTime date)
         {
-            return await _patientRepository.GetByVisitDateAsync(date);
+            return await _patientRepository.GetVisitsByDateAsync(date);
         }
 
         public async Task<IEnumerable<Patient>> SearchAsync(string query, int maxResults)
         {
             return await _patientRepository.SearchAsync(query, maxResults);
+        }
+
+        public async Task<int> GetVisitCountAsync(int patientId)
+        {
+            return await _patientRepository.GetVisitCountAsync(patientId);
+        }
+
+        public async Task<PatientVisit?> GetLastVisitAsync(int patientId)
+        {
+            return await _patientRepository.GetLastVisitAsync(patientId);
         }
 
         public async Task<Patient?> GetByIdAsync(int id)
@@ -56,9 +66,14 @@ namespace DentalBot.Application.Services
             return await _patientRepository.UpdateAsync(patient);
         }
 
-        public async Task AddPatientWithEmployeeAsync(Patient patient, int employeeId)
+        public async Task AddPatientWithVisitAsync(Patient patient, int employeeId, DateTime visitDate)
         {
-            await _patientRepository.AddPatientWithEmployeeAsync(patient, employeeId);
+            await _patientRepository.AddPatientWithVisitAsync(patient, employeeId, visitDate);
+        }
+
+        public async Task AddVisitAsync(int patientId, int employeeId, DateTime visitDate)
+        {
+            await _patientRepository.AddVisitAsync(patientId, employeeId, visitDate);
         }
     }
 }

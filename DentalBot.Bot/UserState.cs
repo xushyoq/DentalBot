@@ -16,7 +16,10 @@ namespace DentalBot.Bot
         WaitingWorkplace,
         WaitingDoctor,
         WaitingPatientSearch,
-        WaitingPatientSelection
+        WaitingPatientSelection,
+        WaitingVisitSearch,
+        WaitingVisitSelection,
+        WaitingVisitDoctor
     }
 
     public class UserState
@@ -24,5 +27,6 @@ namespace DentalBot.Bot
         public UserStep Step { get; set; } = UserStep.None;
         public Patient? TempPatient { get; set; }
         public List<Patient> SearchResults { get; set; } = new();
+        public int? SelectedPatientId { get; set; }
     }
 }

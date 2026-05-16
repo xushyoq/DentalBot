@@ -7,5 +7,6 @@
         public string LastName { get; set; } = string.Empty;
         public long TelegramId { get; set; }
         public ICollection<PatientEmployee> PatientEmployees { get; set; } = new List<PatientEmployee>();
+        public ICollection<PatientVisit> PatientVisits { get; set; } = new List<PatientVisit>();
     }
 }

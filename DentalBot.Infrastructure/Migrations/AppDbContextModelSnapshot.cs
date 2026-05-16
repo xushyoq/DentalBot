@@ -73,9 +73,6 @@ namespace DentalBot.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<DateTime>("VisitDate")
-                        .HasColumnType("timestamp with time zone");
-
                     b.Property<string>("Workplace")
                         .IsRequired()
                         .HasColumnType("text");
@@ -100,6 +97,32 @@ namespace DentalBot.Infrastructure.Migrations
                     b.ToTable("PatientEmployees");
                 });
 
+            modelBuilder.Entity("DentalBot.Domain.Entities.PatientVisit", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("EmployeeId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("PatientId")
+                        .HasColumnType("integer");
+
+                    b.Property<DateTime>("VisitDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EmployeeId");
+
+                    b.HasIndex("PatientId");
+
+                    b.ToTable("PatientVisits");
+                });
+
             modelBuilder.Entity("DentalBot.Domain.Entities.PatientEmployee", b =>
                 {
                     b.HasOne("DentalBot.Domain.Entities.Employee", "Employee")
@@ -119,14 +142,37 @@ namespace DentalBot.Infrastructure.Migrations
                     b.Navigation("Patient");
                 });
 
+            modelBuilder.Entity("DentalBot.Domain.Entities.PatientVisit", b =>
+                {
+                    b.HasOne("DentalBot.Domain.Entities.Employee", "Employee")
+                        .WithMany("PatientVisits")
+                        .HasForeignKey("EmployeeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("DentalBot.Domain.Entities.Patient", "Patient")
+                        .WithMany("Visits")
+                        .HasForeignKey("PatientId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Employee");
+
+                    b.Navigation("Patient");
+                });
+
             modelBuilder.Entity("DentalBot.Domain.Entities.Employee", b =>
                 {
                     b.Navigation("PatientEmployees");
+
+                    b.Navigation("PatientVisits");
                 });
 
             modelBuilder.Entity("DentalBot.Domain.Entities.Patient", b =>
                 {
                     b.Navigation("PatientEmployees");
+
+                    b.Navigation("Visits");
                 });
 #pragma warning restore 612, 618
         }

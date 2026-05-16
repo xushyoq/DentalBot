@@ -8,6 +8,7 @@ namespace DentalBot.Infrastructure.Data
         public DbSet<Patient> Patients { get; set; }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<PatientEmployee> PatientEmployees { get; set; }
+        public DbSet<PatientVisit> PatientVisits { get; set; }
 
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
@@ -29,6 +30,16 @@ namespace DentalBot.Infrastructure.Data
                 .HasOne(pe => pe.Employee)
                 .WithMany(e => e.PatientEmployees)
                 .HasForeignKey(pe => pe.EmployeeId);
+
+            modelBuilder.Entity<PatientVisit>()
+                .HasOne(visit => visit.Patient)
+                .WithMany(patient => patient.Visits)
+                .HasForeignKey(visit => visit.PatientId);
+
+            modelBuilder.Entity<PatientVisit>()
+                .HasOne(visit => visit.Employee)
+                .WithMany(employee => employee.PatientVisits)
+                .HasForeignKey(visit => visit.EmployeeId);
         }
     }
 }
