@@ -35,15 +35,26 @@ namespace DentalBot.Bot.Handlers
             var message = update.Message;
             var telegramId = message.From.Id;
 
-            var isAuthenticated = await _employeeService.AuthService(telegramId);
+            var authResult = await _employeeService.AuthOrRegisterFirstUserAsync(
+                telegramId,
+                message.From.FirstName,
+                message.From.LastName ?? string.Empty);
 
-            if (!isAuthenticated)
+            if (!authResult.IsAuthenticated)
             {
                 await _botClient.SendMessage(
                     message.Chat.Id,
                     "⛔ Sizda bu botdan foydalanish huquqi yo'q.",
                     cancellationToken: ct);
                 return;
+            }
+
+            if (authResult.WasCreated)
+            {
+                await _botClient.SendMessage(
+                    message.Chat.Id,
+                    "✅ Siz birinchi foydalanuvchi sifatida avtomatik ro'yxatdan o'tdingiz.",
+                    cancellationToken: ct);
             }
 
             var state = _userStateService.GetState(telegramId);

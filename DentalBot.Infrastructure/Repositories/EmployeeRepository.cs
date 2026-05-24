@@ -20,6 +20,25 @@ namespace DentalBot.Infrastructure.Repositories
                 .FirstOrDefaultAsync(e => e.TelegramId == telegramId);
         }
 
+        public async Task<Employee?> CreateFirstEmployeeAsync(Employee employee)
+        {
+            await using var transaction = await _context.Database.BeginTransactionAsync();
+
+            await _context.Database.ExecuteSqlRawAsync("LOCK TABLE \"Employees\" IN EXCLUSIVE MODE");
+
+            if (await _context.Employees.AnyAsync())
+            {
+                await transaction.RollbackAsync();
+                return null;
+            }
+
+            _context.Employees.Add(employee);
+            await _context.SaveChangesAsync();
+            await transaction.CommitAsync();
+
+            return employee;
+        }
+
         public async Task<IEnumerable<Employee>> GetAllAsync()
         {
             return await _context.Employees.ToListAsync();

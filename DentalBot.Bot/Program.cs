@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Npgsql;
 using Telegram.Bot;
 using DentalBot.Application.Services;
 
@@ -14,7 +15,9 @@ var builder = Host.CreateDefaultBuilder(args);
 
 builder.ConfigureServices((context, services) =>
 {
-    var connectionString = context.Configuration.GetConnectionString("Default");
+    var connectionString = NormalizeConnectionString(
+        context.Configuration.GetConnectionString("Default")
+        ?? context.Configuration["DATABASE_URL"]);
     var token = context.Configuration["TelegramBot:Token"];
 
     if (string.IsNullOrWhiteSpace(connectionString))
@@ -53,3 +56,29 @@ using (var scope = app.Services.CreateScope())
 }
 
 app.Run();
+
+static string? NormalizeConnectionString(string? connectionString)
+{
+    if (string.IsNullOrWhiteSpace(connectionString))
+    {
+        return connectionString;
+    }
+
+    if (!Uri.TryCreate(connectionString, UriKind.Absolute, out var databaseUrl)
+        || (databaseUrl.Scheme != "postgres" && databaseUrl.Scheme != "postgresql"))
+    {
+        return connectionString;
+    }
+
+    var userInfo = databaseUrl.UserInfo.Split(':', 2);
+    var builder = new NpgsqlConnectionStringBuilder
+    {
+        Host = databaseUrl.Host,
+        Port = databaseUrl.Port > 0 ? databaseUrl.Port : 5432,
+        Database = Uri.UnescapeDataString(databaseUrl.AbsolutePath.TrimStart('/')),
+        Username = userInfo.Length > 0 ? Uri.UnescapeDataString(userInfo[0]) : string.Empty,
+        Password = userInfo.Length > 1 ? Uri.UnescapeDataString(userInfo[1]) : string.Empty
+    };
+
+    return builder.ConnectionString;
+}

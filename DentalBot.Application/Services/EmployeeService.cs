@@ -18,6 +18,24 @@ namespace DentalBot.Application.Services
             return employee != null;
         }
 
+        public async Task<(bool IsAuthenticated, bool WasCreated)> AuthOrRegisterFirstUserAsync(long telegramId, string firstName, string lastName)
+        {
+            var employee = await _employeeRepository.GetEmployeeByIdAsync(telegramId);
+            if (employee != null)
+            {
+                return (true, false);
+            }
+
+            var createdEmployee = await _employeeRepository.CreateFirstEmployeeAsync(new Employee
+            {
+                TelegramId = telegramId,
+                FirstName = string.IsNullOrWhiteSpace(firstName) ? telegramId.ToString() : firstName.Trim(),
+                LastName = lastName.Trim()
+            });
+
+            return (createdEmployee != null, createdEmployee != null);
+        }
+
         public async Task<IEnumerable<Employee>> GetAllAsync()
         {
             return await _employeeRepository.GetAllAsync();

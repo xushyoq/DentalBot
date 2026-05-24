@@ -1,0 +1,24 @@
+services:
+  - type: worker
+    name: dentalbot-worker
+    runtime: docker
+    plan: starter
+    region: frankfurt
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    maxShutdownDelaySeconds: 60
+    envVars:
+      - key: TelegramBot__Token
+        sync: false
+      - key: ConnectionStrings__Default
+        fromDatabase:
+          name: dentalbot-db
+          property: connectionString
+
+databases:
+  - name: dentalbot-db
+    plan: free
+    region: frankfurt
+    databaseName: dentalbot
+    user: dentalbot
+    postgresMajorVersion: "18"

@@ -1,0 +1,13 @@
+.git
+.vs
+.agents
+.codex
+**/bin
+**/obj
+*.user
+*.suo
+*.rsuser
+*.env
+*.log
+Dockerfile
+README.md
