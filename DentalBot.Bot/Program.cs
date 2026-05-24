@@ -1,51 +1,52 @@
-﻿using DentalBot.Bot;
+﻿using System.Security.Cryptography;
+using System.Text;
+using DentalBot.Application.Interfaces;
+using DentalBot.Application.Services;
+using DentalBot.Bot;
 using DentalBot.Bot.Handlers;
 using DentalBot.Infrastructure.Data;
-using DentalBot.Application.Interfaces;
 using DentalBot.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using Npgsql;
 using Telegram.Bot;
-using DentalBot.Application.Services;
+using Telegram.Bot.Types;
 
-var builder = Host.CreateDefaultBuilder(args);
+var builder = WebApplication.CreateBuilder(args);
 
-builder.ConfigureServices((context, services) =>
+var port = builder.Configuration["PORT"];
+if (!string.IsNullOrWhiteSpace(port))
 {
-    var connectionString = NormalizeConnectionString(
-        context.Configuration.GetConnectionString("Default")
-        ?? context.Configuration["DATABASE_URL"]);
-    var token = context.Configuration["TelegramBot:Token"];
+    builder.WebHost.UseUrls($"http://0.0.0.0:{port}");
+}
 
-    if (string.IsNullOrWhiteSpace(connectionString))
-    {
-        throw new InvalidOperationException("Connection string 'Default' is not configured.");
-    }
+var connectionString = NormalizeConnectionString(
+    builder.Configuration.GetConnectionString("Default")
+    ?? builder.Configuration["DATABASE_URL"]);
+var token = builder.Configuration["TelegramBot:Token"];
 
-    if (string.IsNullOrWhiteSpace(token))
-    {
-        throw new InvalidOperationException("Telegram bot token is not configured.");
-    }
+if (string.IsNullOrWhiteSpace(connectionString))
+{
+    throw new InvalidOperationException("Connection string 'Default' is not configured.");
+}
 
-    services.AddDbContext<AppDbContext>(options =>
-        options.UseNpgsql(connectionString));
+if (string.IsNullOrWhiteSpace(token))
+{
+    throw new InvalidOperationException("Telegram bot token is not configured.");
+}
 
-    services.AddSingleton<ITelegramBotClient>(new TelegramBotClient(token));
-    services.AddSingleton<UpdateHandler>();
-    services.AddHostedService<BotBackgroundService>();
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseNpgsql(connectionString));
 
-    services.AddScoped<IEmployeeRepository, EmployeeRepository>();
-    services.AddScoped<IEmployeeService, EmployeeService>();
+builder.Services.AddSingleton<ITelegramBotClient>(new TelegramBotClient(token));
+builder.Services.AddScoped<UpdateHandler>();
 
-    services.AddScoped<IPatientRepository, PatientRepository>();
-    services.AddScoped<IPatientService, PatientService>();
+builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+builder.Services.AddScoped<IEmployeeService, EmployeeService>();
 
-    services.AddSingleton<UserStateService>();
+builder.Services.AddScoped<IPatientRepository, PatientRepository>();
+builder.Services.AddScoped<IPatientService, PatientService>();
 
-});
+builder.Services.AddSingleton<UserStateService>();
 
 var app = builder.Build();
 
@@ -55,7 +56,54 @@ using (var scope = app.Services.CreateScope())
     dbContext.Database.Migrate();
 }
 
+var webhookBaseUrl = app.Configuration["TelegramBot:WebhookUrl"]
+    ?? app.Configuration["RENDER_EXTERNAL_URL"];
+
+if (string.IsNullOrWhiteSpace(webhookBaseUrl))
+{
+    throw new InvalidOperationException("Telegram bot webhook URL is not configured.");
+}
+
+var webhookSecret = app.Configuration["TelegramBot:WebhookSecret"];
+if (string.IsNullOrWhiteSpace(webhookSecret))
+{
+    webhookSecret = CreateStableWebhookSecret(token);
+}
+
+var webhookPath = $"/telegram/webhook/{webhookSecret}";
+var webhookUrl = $"{webhookBaseUrl.TrimEnd('/')}{webhookPath}";
+
+app.MapGet("/health", () => Results.Ok("OK"));
+
+app.MapPost(webhookPath, async (Update update, UpdateHandler handler, CancellationToken ct) =>
+{
+    await handler.HandleUpdateAsync(update, ct);
+    return Results.Ok();
+});
+
+await SetTelegramWebhookAsync(token, webhookUrl);
+
+Console.WriteLine("Bot webhook ishga tushdi");
+
 app.Run();
+
+static async Task SetTelegramWebhookAsync(string token, string webhookUrl)
+{
+    using var httpClient = new HttpClient();
+    using var content = new FormUrlEncodedContent(new Dictionary<string, string>
+    {
+        ["url"] = webhookUrl
+    });
+
+    var response = await httpClient.PostAsync($"https://api.telegram.org/bot{token}/setWebhook", content);
+    response.EnsureSuccessStatusCode();
+}
+
+static string CreateStableWebhookSecret(string token)
+{
+    var hash = SHA256.HashData(Encoding.UTF8.GetBytes(token));
+    return Convert.ToHexString(hash)[..32].ToLowerInvariant();
+}
 
 static string? NormalizeConnectionString(string? connectionString)
 {
