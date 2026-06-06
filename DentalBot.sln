@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DentalBot.Domain", "DentalBot\DentalBot.Domain.csproj", "{C3AA5AA6-36BF-4CDD-A9F3-4C0B1989FFDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DentalBot.Application", "DentalBot.Application\DentalBot.Application.csproj", "{1C60222F-6892-4EBA-941C-6C9784AB119D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DentalBot.Infrastructure", "DentalBot.Infrastructure\DentalBot.Infrastructure.csproj", "{312C464D-030A-47C2-887B-737C77A2B671}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DentalBot.Bot", "DentalBot.Bot\DentalBot.Bot.csproj", "{9F00EB2C-5E0D-427B-9276-4B9F5C3C0965}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3AA5AA6-36BF-4CDD-A9F3-4C0B1989FFDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3AA5AA6-36BF-4CDD-A9F3-4C0B1989FFDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3AA5AA6-36BF-4CDD-A9F3-4C0B1989FFDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3AA5AA6-36BF-4CDD-A9F3-4C0B1989FFDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C60222F-6892-4EBA-941C-6C9784AB119D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C60222F-6892-4EBA-941C-6C9784AB119D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C60222F-6892-4EBA-941C-6C9784AB119D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C60222F-6892-4EBA-941C-6C9784AB119D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{312C464D-030A-47C2-887B-737C77A2B671}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{312C464D-030A-47C2-887B-737C77A2B671}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{312C464D-030A-47C2-887B-737C77A2B671}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{312C464D-030A-47C2-887B-737C77A2B671}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F00EB2C-5E0D-427B-9276-4B9F5C3C0965}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F00EB2C-5E0D-427B-9276-4B9F5C3C0965}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F00EB2C-5E0D-427B-9276-4B9F5C3C0965}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F00EB2C-5E0D-427B-9276-4B9F5C3C0965}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
